@@ -20,4 +20,19 @@ Object.prototype.surendra = function(){
     console.log(`Surendra is present in all object`);
 }
 
-myHero.surendra
+Array.prototype.heySurendra = function(){
+    console.log(`Surendra says Hello`);
+}
+
+const TeachingSupport = {
+    isAvailable : false
+}
+
+const TASupport = {
+    makeAssignment : 'JS Assignment',
+    fullTime : true
+    __proto__: TeachingSupport
+
+}
+
+Teacher.__proto__
