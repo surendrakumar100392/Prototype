@@ -31,8 +31,22 @@ const TeachingSupport = {
 const TASupport = {
     makeAssignment : 'JS Assignment',
     fullTime : true
-    __proto__: TeachingSupport
+    
 
 }
 
-Teacher.__proto__
+// Modern syntax
+
+Object.setPrototypeOf(TeachingSupport, TASupport)
+
+
+let anotherUsername = "ChaiaurCode    "
+
+String.prototype.trueLength = function(){
+    console.log(`${this.name}`);
+    console.log(`True Length is: ${this.trim().length}`);
+}
+
+anotherUsername.trueLength()
+
+"Surendra    ".trueLength()
